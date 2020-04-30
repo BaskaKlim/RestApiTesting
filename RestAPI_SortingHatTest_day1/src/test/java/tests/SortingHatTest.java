@@ -7,15 +7,20 @@ import static org.hamcrest.Matchers.*;
 
 public class SortingHatTest {
 
+    @BeforeAll
+    static void config(){
+        baseURI = "http://localhost";
+        port= 3000;
+        basePath = "/sortingHat";
+    }
+
     @Test
     /** SMOKE REST ASURED TEST - testujem endpoint SortingHat ci odpovie na request - code200**/
     void itShouldReturnStatusCode200() {
         //arrange - given     dana url
         //act   - when    zavolam GET REQUEST
         //assert   - then     statuscode bude 200
-        given().baseUri("http://localhost:3000/sortingHat")
-                .when().get()
-                .then().statusCode(200);
+                when().get().then().statusCode(200);
 
     }
 
@@ -23,8 +28,7 @@ public class SortingHatTest {
     /** validate body request value - testujem odpoved, co mi pride v requeste **/
 
     void itShouldReturnCorrectKeys() {
-        given().baseUri("http://localhost:3000/sortingHat")
-                .when().get()
+                when().get()
                 .then().log().body()      //vypisanie requestu do koncoly
                 .body("", hasKey("sortingHatSays"))
                 .body("", hasKey("house"));
