@@ -16,7 +16,10 @@ public class SpellTests {
         given().baseUri("http://localhost:3000/spells/5b74ef813228320021ab624c")
                 .when().get()
                 .then().statusCode(200)
-                .body("spell",equalTo("Crucio"));
+                .body("spell",equalTo("Crucio"))
+                .body("type",equalTo("Curse"))
+                .body("effect",equalTo("tortures a person"))
+                .body("isUnforgivable", is(true));
 
     }
 
