@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/SpellTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+            <state relative-caret-position="303">
+              <caret line="51" column="3" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -50,8 +50,8 @@
     <option name="runMavenInBackground" value="false" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="330" />
-    <option name="y" value="79" />
+    <option name="x" value="248" />
+    <option name="y" value="23" />
     <option name="width" value="1269" />
     <option name="height" value="821" />
   </component>
@@ -116,7 +116,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588253131078" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588253906935" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -326,14 +326,11 @@
       <workItem from="1588090392003" duration="2683000" />
       <workItem from="1588194663753" duration="1036000" />
       <workItem from="1588245648085" duration="2475000" />
-      <workItem from="1588248449306" duration="2971000" />
+      <workItem from="1588248449306" duration="3618000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpellTests_itShouldContainMessageFromSortingHat - 2020.04.30 at 14h 10m 53s.xml">
-      <configuration name="SpellTests.itShouldContainMessageFromSortingHat" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SpellTests - 2020.04.30 at 14h 11m 18s.xml">
       <configuration name="SpellTests" configurationId="JUnit" />
     </history-entry>
@@ -361,12 +358,15 @@
     <history-entry file="SpellTests_itShouldReturnSpellForEachSpellInList - 2020.04.30 at 15h 21m 02s.xml">
       <configuration name="SpellTests.itShouldReturnSpellForEachSpellInList" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpellTests_itShouldReturnErrorMessageSpellNotFound - 2020.04.30 at 15h 31m 25s.xml">
+      <configuration name="SpellTests.itShouldReturnErrorMessageSpellNotFound" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10057000" />
+    <option name="totallyTimeSpent" value="10704000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="330" y="79" width="1269" height="821" extended-state="0" />
+    <frame x="441" y="50" width="1269" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21678892" />
@@ -413,8 +413,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/SpellTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+        <state relative-caret-position="303">
+          <caret line="51" column="3" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
         </state>
       </provider>
     </entry>
