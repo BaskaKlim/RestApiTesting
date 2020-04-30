@@ -42,4 +42,17 @@ public class SortingHatTest {
     }
 
 
+
+    @Test
+    /** validate key "sortingHatSays" - if string are not empty or null **/
+    void itShouldContainMessageFromSortingHat() {
+        given().baseUri("http://localhost:3000/sortingHat")
+                .when().get()
+                .then().log()
+                .body().body("sortingHatSays", not(emptyOrNullString()));
+
+    }
+
+
+
 }
