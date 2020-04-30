@@ -13,6 +13,7 @@ public class SpellTests {
     static void config(){
         baseURI = "http://localhost";
         port= 3000;
+        basePath = "/spells";
     }
 
 
@@ -23,7 +24,7 @@ public class SpellTests {
         //act   - when    zavolam GET REQUEST
         //assert   - then     statuscode bude 200
         given().pathParam("spellId","5b74ef813228320021ab624c")
-                .when().get("/spells/{spellId}")
+                .when().get("/{spellId}")
                 .then().statusCode(200)
                 .body("spell",equalTo("Crucio"))
                 .body("type",equalTo("Curse"))
