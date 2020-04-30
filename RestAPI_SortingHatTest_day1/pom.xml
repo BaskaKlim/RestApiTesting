@@ -10,11 +10,40 @@
     <packaging>jar</packaging>
     <!-- <name>PROJECT_NAME</name> -->
 
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.test.skip>true</maven.test.skip>
+        <!-- <exec.mainClass>FULLY_QUALIFIED_NAME_OF_THE_MAIN_CLASS</exec.mainClass> -->
+        <java.version>1.8</java.version>
+
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <!-- Remove above 2 lines as well as the SPACE between $ and {var.name}
+        <maven.compiler.source>$ {java.version}</maven.compiler.source>
+        <maven.compiler.target>$ {java.version}</maven.compiler.target>
+        -->
     </properties>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.6.2</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.3.0</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
 
     <build>
         <!-- <finalName>DISTRIBUTION_JAR_NAME</finalName> -->
