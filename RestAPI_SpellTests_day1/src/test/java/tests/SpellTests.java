@@ -1,5 +1,6 @@
 package tests;
 
+import java.util.*;
 import org.junit.jupiter.api.*;
 import io.restassured.*;
 
@@ -34,6 +35,22 @@ public class SpellTests {
     }
 
 
+    @Test
+    void itShouldReturnErrorMessageSpellNotFound() {
+        given().pathParam("spellId","invalid")
+                .when().get("/{spellId}")
+                .then().body("message", equalTo("Spell not found"))
+                .statusCode(404);
+                
+    }
+
+    //**deserializacia z jsonu na hasmapu alebo objekt**//
+    @Test
+    void itShouldReturnSpellForEachSpellInList(){
+        when().get()
+                .then().extract().response()
+                .jsonPath().getList("$").forEach(System.out::println);
+    }
 
 
 
