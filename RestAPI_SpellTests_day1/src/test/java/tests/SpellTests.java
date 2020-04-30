@@ -5,6 +5,7 @@ import org.junit.jupiter.api.*;
 import io.restassured.*;
 
 import static io.restassured.RestAssured.*;
+import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
 
 public class SpellTests {
@@ -43,15 +44,31 @@ public class SpellTests {
 
     //**deserializacia z jsonu na hasmapu alebo objekt**//
     @Test
+
     void itShouldReturnSpellForEachSpellInList() {
-        List<HashMap<Object, Object>> spells =
+        List<HashMap<Object, String>> spells =
                 when().get()
                         .then().extract().response()
                         .jsonPath().getList("$");
 
-        
+
         spells.forEach(spell -> System.out.println(spell.get("effect")));
 
+    }
+
+    //**deserializacia z jsonu na hasmapu alebo objekt**//
+    @Test
+    void itShouldHaveValidAllSpellsInListOfSpells() {
+        List<HashMap<Object, String>> spells =
+                when().get()
+                        .then().extract().response()
+                        .jsonPath().getList("$");
+
+        spells.forEach(spell -> {
+            assertThat(spell.get("effect"), not(emptyOrNullString()));
+            assertThat(spell.get("spell"), not(emptyOrNullString()));
+            assertThat(spell.get("id"), not(emptyOrNullString()));
+        });
     }
 
 }
