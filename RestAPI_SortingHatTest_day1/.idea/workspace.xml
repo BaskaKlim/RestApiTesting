@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/SortingHatTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+            <state relative-caret-position="278">
+              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -67,6 +67,32 @@
               <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
               <item name="RestAPI_SortingHatTest_day1" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestAPI_SortingHatTest_day1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestAPI_SortingHatTest_day1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestAPI_SortingHatTest_day1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestAPI_SortingHatTest_day1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -83,7 +109,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588247414132" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588247837916" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -142,6 +168,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortingHatTest.itShouldContainOneOfHouses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="potterpitest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SortingHatTest" />
+      <option name="METHOD_NAME" value="itShouldContainOneOfHouses" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortingHatTest.itShouldReturnCorrectKeys" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="potterpitest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SortingHatTest" />
+      <option name="METHOD_NAME" value="itShouldReturnCorrectKeys" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -187,10 +253,14 @@
     <list>
       <item itemvalue="JUnit.tests in RestAPiTesting" />
       <item itemvalue="JUnit.SortingHatTest" />
+      <item itemvalue="JUnit.SortingHatTest.itShouldContainOneOfHouses" />
+      <item itemvalue="JUnit.SortingHatTest.itShouldReturnCorrectKeys" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SortingHatTest" />
+        <item itemvalue="JUnit.SortingHatTest.itShouldReturnCorrectKeys" />
+        <item itemvalue="JUnit.SortingHatTest.itShouldContainOneOfHouses" />
       </list>
     </recent_temporary>
   </component>
@@ -204,20 +274,11 @@
       <workItem from="1588088817559" duration="892000" />
       <workItem from="1588090392003" duration="2683000" />
       <workItem from="1588194663753" duration="1036000" />
-      <workItem from="1588245648085" duration="1492000" />
+      <workItem from="1588245648085" duration="1786000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SortingHatTest_itShouldReturnStatusCode200 - 2020.04.29 at 23h 17m 05s.xml">
-      <configuration name="SortingHatTest.itShouldReturnStatusCode200" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SortingHatTest_itShouldReturnCorrectKeys - 2020.04.29 at 23h 17m 16s.xml">
-      <configuration name="SortingHatTest.itShouldReturnCorrectKeys" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SortingHatTest_itShouldContainOneOfHouses - 2020.04.29 at 23h 17m 29s.xml">
-      <configuration name="SortingHatTest.itShouldContainOneOfHouses" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SortingHatTest_itShouldContainOneOfHouses - 2020.04.29 at 23h 18m 24s.xml">
       <configuration name="SortingHatTest.itShouldContainOneOfHouses" configurationId="JUnit" />
     </history-entry>
@@ -239,14 +300,24 @@
     <history-entry file="SortingHatTest_itShouldReturnStatusCode200 - 2020.04.30 at 13h 40m 26s.xml">
       <configuration name="SortingHatTest.itShouldReturnStatusCode200" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SortingHatTest_itShouldReturnCorrectKeys - 2020.04.30 at 13h 46m 56s.xml">
+      <configuration name="SortingHatTest.itShouldReturnCorrectKeys" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SortingHatTest - 2020.04.30 at 13h 50m 07s.xml">
+      <configuration name="SortingHatTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SortingHatTest - 2020.04.30 at 13h 50m 21s.xml">
+      <configuration name="SortingHatTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6103000" />
+    <option name="totallyTimeSpent" value="6397000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="288" y="38" width="1269" height="821" extended-state="0" />
+    <frame x="16" y="24" width="1269" height="821" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21352893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21352893" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -255,7 +326,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32921812" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32921812" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -290,8 +361,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/SortingHatTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        <state relative-caret-position="278">
+          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
         </state>
       </provider>
     </entry>

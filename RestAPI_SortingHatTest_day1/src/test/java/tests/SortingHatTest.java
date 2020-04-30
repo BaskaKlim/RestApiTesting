@@ -1,13 +1,9 @@
 package tests;
 
 import org.junit.jupiter.api.*;
-
 import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
 
-import static org.hamcrest.CoreMatchers.*;
-import static org.hamcrest.collection.IsIn.*;
-import static org.hamcrest.collection.IsMapContaining.*;
-import static org.hamcrest.text.IsEmptyString.*;
 
 public class SortingHatTest {
 
@@ -24,7 +20,7 @@ public class SortingHatTest {
     }
 
     @Test
-    /** validate body request value - testujem odpoved, co mi pride v requeste**/
+    /** validate body request value - testujem odpoved, co mi pride v requeste **/
 
     void itShouldReturnCorrectKeys() {
         given().baseUri("http://localhost:3000/sortingHat")
@@ -33,5 +29,17 @@ public class SortingHatTest {
                 .body("", hasKey("sortingHatSays"))
                 .body("", hasKey("house"));
     }
+
+
+    @Test
+    /** validate values for key "house" **/
+
+    void itShouldContainOneOfHouses() {
+        given().baseUri("http://localhost:3000/sortingHat")
+                .when().get()
+                .then().log()
+                .body().body("house", oneOf("Slytherin", "Ravenclaw", "Gryffindor", "Hufflepuff"));
+    }
+
 
 }
