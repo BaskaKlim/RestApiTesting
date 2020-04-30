@@ -10,22 +10,20 @@
     <packaging>jar</packaging>
     <!-- <name>PROJECT_NAME</name> -->
 
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.test.skip>true</maven.test.skip>
-        <!-- <exec.mainClass>FULLY_QUALIFIED_NAME_OF_THE_MAIN_CLASS</exec.mainClass> -->
-        <java.version>1.8</java.version>
-
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <!-- Remove above 2 lines as well as the SPACE between $ and {var.name}
-        <maven.compiler.source>$ {java.version}</maven.compiler.source>
-        <maven.compiler.target>$ {java.version}</maven.compiler.target>
-        -->
-    </properties>
-
+    <build>
+        <!-- <finalName>DISTRIBUTION_JAR_NAME</finalName> -->
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.6.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
@@ -44,24 +42,5 @@
         </dependency>
 
     </dependencies>
-
-    <build>
-        <!-- <finalName>DISTRIBUTION_JAR_NAME</finalName> -->
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.1</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <!-- Remove above 2 lines as well as the SPACE between $ and {var.name}
-                    <source>$ {maven.compiler.source}</source>
-                    <target>$ {maven.compiler.target}</target>
-                    -->
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>

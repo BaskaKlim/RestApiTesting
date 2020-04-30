@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="224">
+              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/SortingHatTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="356">
+              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -57,9 +57,9 @@
   <component name="MavenRunner">
     <option name="runMavenInBackground" value="false" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="171" />
-    <option name="y" value="24" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="288" />
+    <option name="y" value="38" />
     <option name="width" value="1269" />
     <option name="height" value="821" />
   </component>
@@ -68,44 +68,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPiTesting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPiTesting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPiTesting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPiTesting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPiTesting" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -118,7 +82,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588244672428" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588246816254" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -145,7 +109,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SortingHatTest.itShouldContainMessageFromSortingHat">
+  <component name="RunManager" selected="JUnit.SortingHatTest.itShouldReturnStatusCode200">
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -238,7 +202,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingHatTest.itShouldReturnStatusCode200" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SortingHatTest.itShouldReturnStatusCode200" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="RestAPiTesting" />
       <extension name="coverage">
         <pattern>
@@ -285,7 +249,6 @@
         <item itemvalue="JUnit.SortingHatTest.itShouldContainMessageFromSortingHat" />
         <item itemvalue="JUnit.SortingHatTest.itShouldContainOneOfHouses" />
         <item itemvalue="JUnit.SortingHatTest.itShouldReturnCorrectKeys" />
-        <item itemvalue="JUnit.SortingHatTest.itShouldReturnStatusCode200" />
         <item itemvalue="JUnit.SortingHatTest" />
       </list>
     </recent_temporary>
@@ -300,19 +263,11 @@
       <workItem from="1588088817559" duration="892000" />
       <workItem from="1588090392003" duration="2683000" />
       <workItem from="1588194663753" duration="1036000" />
+      <workItem from="1588245648085" duration="916000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SortingHatTest - 2020.04.28 at 18h 02m 04s.xml">
-      <configuration name="SortingHatTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SortingHatTest_itShouldReturnStatusCode200 - 2020.04.29 at 23h 11m 55s.xml">
-      <configuration name="SortingHatTest.itShouldReturnStatusCode200" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SortingHatTest_itShouldReturnStatusCode200 - 2020.04.29 at 23h 16m 46s.xml">
-      <configuration name="SortingHatTest.itShouldReturnStatusCode200" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SortingHatTest_itShouldReturnStatusCode200 - 2020.04.29 at 23h 17m 05s.xml">
       <configuration name="SortingHatTest.itShouldReturnStatusCode200" configurationId="JUnit" />
     </history-entry>
@@ -334,15 +289,24 @@
     <history-entry file="SortingHatTest_itShouldContainMessageFromSortingHat - 2020.04.29 at 23h 35m 34s.xml">
       <configuration name="SortingHatTest.itShouldContainMessageFromSortingHat" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SortingHatTest_itShouldContainMessageFromSortingHat - 2020.04.30 at 13h 36m 44s.xml">
+      <configuration name="SortingHatTest.itShouldContainMessageFromSortingHat" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SortingHatTest_itShouldReturnStatusCode200 - 2020.04.30 at 13h 37m 30s.xml">
+      <configuration name="SortingHatTest.itShouldReturnStatusCode200" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SortingHatTest_itShouldReturnStatusCode200 - 2020.04.30 at 13h 40m 26s.xml">
+      <configuration name="SortingHatTest.itShouldReturnStatusCode200" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4611000" />
+    <option name="totallyTimeSpent" value="5527000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="171" y="24" width="1269" height="821" extended-state="0" />
+    <frame x="288" y="38" width="1269" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21026894" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21352893" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -351,7 +315,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32921812" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32921812" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -379,15 +343,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/SortingHatTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="356">
+          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="224">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
         </state>
       </provider>
     </entry>
