@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/SpellTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="304">
+              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -61,7 +61,7 @@
     <option name="runMavenInBackground" value="false" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="172" />
+    <option name="x" value="462" />
     <option name="y" value="23" />
     <option name="width" value="1077" />
     <option name="height" value="821" />
@@ -127,7 +127,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588366701909" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588368683363" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -158,7 +158,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpellTests.itShouldAddNewSpell">
+  <component name="RunManager" selected="JUnit.SpellTests.itShoudlContainsAvadaKedavraSpellinListOfSpells">
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -168,6 +168,26 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpellTests.itShoudlContainsAvadaKedavraSpellinListOfSpells" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="potterpitest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SpellTests" />
+      <option name="METHOD_NAME" value="itShoudlContainsAvadaKedavraSpellinListOfSpells" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -183,26 +203,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.SpellTests" />
       <option name="METHOD_NAME" value="itShouldAddNewSpell" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpellTests.itShouldFilterSpellsBasedOnQueryType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="potterpitest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SpellTests" />
-      <option name="METHOD_NAME" value="itShouldFilterSpellsBasedOnQueryType" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -318,17 +318,17 @@
       <item itemvalue="JUnit.tests" />
       <item itemvalue="JUnit.SpellTests.statusLineShouldContainOK" />
       <item itemvalue="JUnit.SpellTests.itShouldFindSpellIdAndSendItAsParameter" />
-      <item itemvalue="JUnit.SpellTests.itShouldFilterSpellsBasedOnQueryType" />
       <item itemvalue="JUnit.SpellTests.itShouldHaveValidAllSpellsInListOfSpells" />
       <item itemvalue="JUnit.SpellTests.itShouldAddNewSpell" />
+      <item itemvalue="JUnit.SpellTests.itShoudlContainsAvadaKedavraSpellinListOfSpells" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpellTests.itShoudlContainsAvadaKedavraSpellinListOfSpells" />
         <item itemvalue="JUnit.SpellTests.itShouldAddNewSpell" />
         <item itemvalue="JUnit.SpellTests.itShouldFindSpellIdAndSendItAsParameter" />
         <item itemvalue="JUnit.SpellTests.itShouldHaveValidAllSpellsInListOfSpells" />
         <item itemvalue="JUnit.SpellTests.statusLineShouldContainOK" />
-        <item itemvalue="JUnit.SpellTests.itShouldFilterSpellsBasedOnQueryType" />
       </list>
     </recent_temporary>
   </component>
@@ -344,7 +344,7 @@
       <workItem from="1588194663753" duration="1036000" />
       <workItem from="1588245648085" duration="2475000" />
       <workItem from="1588248449306" duration="5008000" />
-      <workItem from="1588258693202" duration="9821000" />
+      <workItem from="1588258693202" duration="11365000" />
     </task>
     <servers />
   </component>
@@ -381,10 +381,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21915000" />
+    <option name="totallyTimeSpent" value="23459000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="172" y="23" width="1077" height="821" extended-state="0" />
+    <frame x="333" y="23" width="1077" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26086956" />
@@ -452,8 +452,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/SpellTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="304">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
         </state>
       </provider>
     </entry>
