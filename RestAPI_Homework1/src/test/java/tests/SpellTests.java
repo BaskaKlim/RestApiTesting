@@ -30,7 +30,8 @@ public class SpellTests {
                 .then().extract().response()
                 .jsonPath().getList("$.spell");
 
-       
+        // porovnam ci obsahuje Avada Kedavra - co hladam
+        assertThat(allSpellsOnWeb, hasItems(expectedSpell)) ;
     }
 }
 
