@@ -11,7 +11,6 @@ import static org.hamcrest.Matchers.*;
 
 public class SpellTests {
 
-
     @BeforeAll
     static void config() {
         baseURI = "http://localhost";
@@ -27,23 +26,31 @@ public class SpellTests {
         String expectedSpell = "Avada Kedavra";
 
         //vytiahnem  si vsetky hodnoty z responde na GET request, konkretne atribut spell kazdej odpovede
-        List<String> allSpellsOnWeb =  when().get()
+        List<String> allSpellsOnWeb = when().get()
                 .then().extract().response()
                 .jsonPath().getList("spell");
 
         // porovnam ci obsahuje Avada Kedavra - co hladam
-        assertThat(allSpellsOnWeb, hasItems(expectedSpell)) ;
+        assertThat(allSpellsOnWeb, hasItems(expectedSpell));
     }
 
     //TODO 2: zisti, kolko kuzel obsahuje list kuzel
     @Test
-    void itShouldReturnSizeOfSpells(){
-        int numberOfSpells =  when().get()
+    void itShouldReturnSizeOfSpells() {
+        int numberOfSpells = when().get()
                 .then().extract().response()
                 .jsonPath().getList("spell").size();
-        
+
         System.out.println(numberOfSpells);
-        
+
+    }
+
+    //TODO 3:  overte, že status-line obsahuje text OK
+    @Test
+    void itShouldContainsOKStatus() {
+        when().get()
+                .then().log()
+                .status().statusLine(containsString("OK"));
 
     }
 }
