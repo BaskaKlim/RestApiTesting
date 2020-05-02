@@ -29,7 +29,7 @@ public class SpellTests {
         //vytiahnem  si vsetky hodnoty z responde na GET request, konkretne atribut spell kazdej odpovede
         List<String> allSpellsOnWeb =  when().get()
                 .then().extract().response()
-                .jsonPath().getList("$.spell");
+                .jsonPath().getList("spell");
 
         // porovnam ci obsahuje Avada Kedavra - co hladam
         assertThat(allSpellsOnWeb, hasItems(expectedSpell)) ;
