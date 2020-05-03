@@ -12,11 +12,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/SpellTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
+            <state relative-caret-position="215">
+              <caret line="89" column="68" lean-forward="true" selection-start-line="89" selection-start-column="68" selection-end-line="89" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/exceptions/SpellNotFundException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -47,6 +56,7 @@
         <option value="$PROJECT_DIR$/src/test/java/modals/Spell.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/tests/SpellTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/exceptions/SpellNotFundException.java" />
       </list>
     </option>
   </component>
@@ -127,7 +137,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588506180977" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588506813417" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -344,17 +354,11 @@
       <workItem from="1588194663753" duration="1036000" />
       <workItem from="1588245648085" duration="2475000" />
       <workItem from="1588248449306" duration="5008000" />
-      <workItem from="1588258693202" duration="18454000" />
+      <workItem from="1588258693202" duration="19319000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpellTests_itShouldReturnSizeOfSpells - 2020.05.02 at 22h 20m 50s.xml">
-      <configuration name="SpellTests.itShouldReturnSizeOfSpells" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpellTests_itShoudlContainsAvadaKedavraSpellinListOfSpells - 2020.05.02 at 22h 22m 47s.xml">
-      <configuration name="SpellTests.itShoudlContainsAvadaKedavraSpellinListOfSpells" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SpellTests_itShouldContainsOKStatus - 2020.05.02 at 23h 09m 17s.xml">
       <configuration name="SpellTests.itShouldContainsOKStatus" configurationId="JUnit" />
     </history-entry>
@@ -379,9 +383,15 @@
     <history-entry file="SpellTests_itShouldFindSpellIdAndSendItAsParameter - 2020.05.03 at 13h 14m 45s.xml">
       <configuration name="SpellTests.itShouldFindSpellIdAndSendItAsParameter" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpellTests_itShouldFindSpellIdAndSendItAsParameter - 2020.05.03 at 13h 43m 22s.xml">
+      <configuration name="SpellTests.itShouldFindSpellIdAndSendItAsParameter" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpellTests_itShouldFindSpellIdAndSendItAsParameter - 2020.05.03 at 13h 53m 47s.xml">
+      <configuration name="SpellTests.itShouldFindSpellIdAndSendItAsParameter" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30548000" />
+    <option name="totallyTimeSpent" value="31413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="90" y="53" width="1298" height="821" extended-state="0" />
@@ -396,7 +406,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32921812" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32921812" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -426,7 +436,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/SpellTests.java</url>
-          <line>58</line>
+          <line>60</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -464,8 +474,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/SpellTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
+        <state relative-caret-position="215">
+          <caret line="89" column="68" lean-forward="true" selection-start-line="89" selection-start-column="68" selection-end-line="89" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/exceptions/SpellNotFundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>

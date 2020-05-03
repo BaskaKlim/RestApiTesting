@@ -5,6 +5,8 @@ import java.util.*;
 import org.hamcrest.collection.*;
 import org.junit.jupiter.api.*;
 
+import exceptions.*;
+
 import static io.restassured.RestAssured.*;
 import static java.util.stream.Collectors.*;
 import static org.hamcrest.MatcherAssert.*;
@@ -78,26 +80,29 @@ public class SpellTests {
     //TODO 5: pomocou stream->filter skúste vytiahnuť idčko kúzla Avada Kedavra , pošlite v rámci testu ďaľší
     // request a toto id použite. Potom overte, že kúzlo, ktoré sa vám vrátilo je práve Avada Kedavra.
     @Test
-    void itShouldFindSpellIdAndSendItAsParameter() {
+    void itShouldFindSpellIdAndSendItAsParameter() throws SpellNotFundException {
+        String spellToFind = "Avada Kedavra";
+
         //1. vytiahnem si vsetky spells do listu  / do hashmapy naplnenej objetami
         List<HashMap<Object, String>> spells = when().get()
                 .then().extract().response()
                 .jsonPath().getList("$");
 
         //2. z hashmapy objektov si vyberiem objekt s danym id
-        String id = spells.stream().filter(object -> object.get("spell").equals("Avada Kedavra"))
+
+        String id = spells.stream().filter(object -> object.get("spell").equals(spellToFind))
                 .findFirst()
-                .orElseThrow(() -> new NullPointerException("Spell not found"))
+                .orElseThrow(() -> new SpellNotFundException(spellToFind))
                 .get("id");
 
         //3. id pouzijem ako path paramenter
-        given().pathParam("spellId",id)
+        given().pathParam("spellId", id)
                 .when().get("/{spellId}")
                 .then()
-                .body("spell", equalTo("Avada Kedavra"))
+                .body("spell", equalTo(spellToFind))
                 .body("effect", equalTo("murders opponent"))
                 .body("type", equalTo("Curse"))
-                .body("isUnforgivable",is(true));
+                .body("isUnforgivable", is(true));
 
     }
 
