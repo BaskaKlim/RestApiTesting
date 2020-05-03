@@ -24,13 +24,16 @@ public class SpellTests {
 
     @Test
     void itShoulFilterSpellsBasedOnQueryType() {
-        //1. nastavim parametre cez query
-        given().queryParam("type", "Curse")
-                .queryParam("isUnforgivable",true)
-        //2. vytiahnem si vsetky do logu
+        //1. nastavim parametre cez query a vytiahnem si list kuzel, ktory ich splna
+        List<HashMap <Object, String>> spells = given().queryParam("type", "Curse")
                 .when().get()
-                .then().log().body();
+                .then().extract().jsonPath().getList("$");
 
+        // 2. overit ze kazde kuzlo je typu Curse
+        spells.forEach(spell -> assertThat(spell.get("type"), equalTo("Curse")));
+
+        // 3. overit ze pocet je vacsi ako 0
+        assertThat(spells, hasSize(greaterThan(0)));
     }
 
 }
