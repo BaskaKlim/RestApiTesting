@@ -51,7 +51,9 @@ public class SpellTests {
         //2. pomocou POST poslem toto kuzlo serveru
           // treba za given nastavit hlavicku
         given().header("Content-Type","application/json")
-                .body(newSpell).when().post().then().statusCode(201);
+                .body(newSpell).when().post().then().statusCode(201)
+                .body("message", equalTo("Spell created"))
+                .body("spell.id", not(emptyOrNullString()));
     }
 }
 
