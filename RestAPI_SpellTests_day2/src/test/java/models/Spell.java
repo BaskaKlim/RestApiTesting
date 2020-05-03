@@ -1,5 +1,7 @@
 package models;
 
+import com.fasterxml.jackson.annotation.*;
+
 public class Spell {
 
     private String id;
@@ -41,7 +43,7 @@ public class Spell {
         effect = newValue;
     }
 
-    @Deprecated isUnforgivable
+    @JsonGetter( value = "isUnforgivable")
     public Boolean getUnforgivable() {
         return isUnforgivable;
     }
