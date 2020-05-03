@@ -55,17 +55,18 @@ public class SpellTests {
     void itShouldAddNewSpell() {
 
         Faker faker = new Faker();
-        //1. vytvorit objektu noveho kuzla
-        HashMap<Object, Object> newSpell = new HashMap<>();
-        newSpell.put("spell", "Corona ".concat(faker.letterify("???")));
-        newSpell.put("effect", faker.harryPotter().quote());
-        newSpell.put("type", "Curse");
-        newSpell.put("isUnforgivable", "true");
+        //1. vytvorit objektu noveho kuzlo
+
+        Spell newSpell2 = new Spell(
+                "Corona".concat(faker.letterify("???")),
+                "Curse",
+                faker.harryPotter().quote(),
+                true);
 
         //2. pomocou POST poslem toto kuzlo serveru
         // treba za given nastavit hlavicku
         given().header("Content-Type", "application/json")
-                .body(newSpell).log().body() //zalogujem si co posielam na server
+                .body(newSpell2).log().body() //zalogujem si co posielam na server
                 .when().post().then().statusCode(201)
                 .body("message", equalTo("Spell created"))
                 .body("spell.id", not(emptyOrNullString()));

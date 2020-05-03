@@ -11,6 +11,17 @@ public class Spell {
 
     Boolean isUnforgivable;
 
+    public Spell() {
+    }
+
+    //id neposielam na server, preto nepotrebujem v konstruktory
+    public Spell(String spell, String type, String effect, Boolean isUnforgivable) {
+        this.spell = spell;
+        this.type = type;
+        this.effect = effect;
+        this.isUnforgivable = isUnforgivable;
+    }
+
     public String getId() {
         return id;
     }
