@@ -34,5 +34,15 @@ public class CharactesTests {
                 .then().statusCode(401)
                 .and().body("message", equalTo("Sorry Wizard, can't let you in."));
     }
+
+    //TODO: autentifikacia: ak zadam meno a heslo, mozem si dotiahnut characters
+    @Test
+    void itShouldReturnCharactersWhenUserIsAuthenticated() {
+        given().auth().preemptive()
+                .basic("admin", "supersecret") // basic znamena meno, heslo
+                .when().get()
+                .then().statusCode(200);
+
+    }
 }
 
