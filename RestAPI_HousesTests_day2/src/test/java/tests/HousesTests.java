@@ -23,7 +23,6 @@ public class HousesTests {
         RestAssured.baseURI = "http://localhost";
         RestAssured.port = 3000;
 
-
     }
 
     //TODO: autentifikacia: nie som identifikovana, nepusti ma, lebo nemam token
@@ -45,6 +44,10 @@ public class HousesTests {
         System.out.println(token);
 
         //2 request - pouzijem token a dotiahnem houses
+            //natvrdo zadavam v hlavicke Bearer roken
+        given().header("Authorization", "Bearer ".concat(token))
+                .when().get("houses")
+                .then().statusCode(200);
     }
 }
 
