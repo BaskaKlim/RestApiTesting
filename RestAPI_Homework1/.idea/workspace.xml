@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/SpellTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+            <state relative-caret-position="342">
+              <caret line="72" column="56" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -63,7 +63,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="90" />
     <option name="y" value="53" />
-    <option name="width" value="1077" />
+    <option name="width" value="1298" />
     <option name="height" value="821" />
   </component>
   <component name="ProjectView">
@@ -127,7 +127,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588453741815" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588502952237" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -158,7 +158,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpellTests.itShouldContainsOKStatus">
+  <component name="RunManager" selected="JUnit.SpellTests.itShouldCointainsCurseSpells">
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -212,6 +212,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpellTests.itShouldCointainsCurseSpells" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="potterpitest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SpellTests" />
+      <option name="METHOD_NAME" value="itShouldCointainsCurseSpells" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpellTests.itShouldContainsOKStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="potterpitest" />
       <extension name="coverage">
@@ -223,26 +243,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.SpellTests" />
       <option name="METHOD_NAME" value="itShouldContainsOKStatus" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpellTests.itShouldFindSpellIdAndSendItAsParameter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="potterpitest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SpellTests" />
-      <option name="METHOD_NAME" value="itShouldFindSpellIdAndSendItAsParameter" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -316,19 +316,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.tests" />
-      <item itemvalue="JUnit.SpellTests.itShouldFindSpellIdAndSendItAsParameter" />
       <item itemvalue="JUnit.SpellTests.itShouldAddNewSpell" />
       <item itemvalue="JUnit.SpellTests.itShoudlContainsAvadaKedavraSpellinListOfSpells" />
       <item itemvalue="JUnit.SpellTests.itShouldReturnSizeOfSpells" />
       <item itemvalue="JUnit.SpellTests.itShouldContainsOKStatus" />
+      <item itemvalue="JUnit.SpellTests.itShouldCointainsCurseSpells" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpellTests.itShouldCointainsCurseSpells" />
         <item itemvalue="JUnit.SpellTests.itShouldContainsOKStatus" />
         <item itemvalue="JUnit.SpellTests.itShoudlContainsAvadaKedavraSpellinListOfSpells" />
         <item itemvalue="JUnit.SpellTests.itShouldReturnSizeOfSpells" />
         <item itemvalue="JUnit.SpellTests.itShouldAddNewSpell" />
-        <item itemvalue="JUnit.SpellTests.itShouldFindSpellIdAndSendItAsParameter" />
       </list>
     </recent_temporary>
   </component>
@@ -344,23 +344,11 @@
       <workItem from="1588194663753" duration="1036000" />
       <workItem from="1588245648085" duration="2475000" />
       <workItem from="1588248449306" duration="5008000" />
-      <workItem from="1588258693202" duration="13807000" />
+      <workItem from="1588258693202" duration="16418000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpellTests_itShouldAddNewSpell - 2020.04.30 at 19h 26m 57s.xml">
-      <configuration name="SpellTests.itShouldAddNewSpell" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpellTests_itShoudlContainsAvadaKedavraSpellinListOfSpells - 2020.05.01 at 23h 31m 57s.xml">
-      <configuration name="SpellTests.itShoudlContainsAvadaKedavraSpellinListOfSpells" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpellTests_itShouldReturnSizeOfSpells - 2020.05.02 at 22h 03m 42s.xml">
-      <configuration name="SpellTests.itShouldReturnSizeOfSpells" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SpellTests_itShouldReturnSizeOfSpells - 2020.05.02 at 22h 04m 36s.xml">
-      <configuration name="SpellTests.itShouldReturnSizeOfSpells" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SpellTests_itShoudlContainsAvadaKedavraSpellinListOfSpells - 2020.05.02 at 22h 04m 54s.xml">
       <configuration name="SpellTests.itShoudlContainsAvadaKedavraSpellinListOfSpells" configurationId="JUnit" />
     </history-entry>
@@ -379,15 +367,27 @@
     <history-entry file="SpellTests_itShoudlContainsAvadaKedavraSpellinListOfSpells - 2020.05.02 at 22h 22m 47s.xml">
       <configuration name="SpellTests.itShoudlContainsAvadaKedavraSpellinListOfSpells" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpellTests_itShouldContainsOKStatus - 2020.05.02 at 23h 09m 17s.xml">
+      <configuration name="SpellTests.itShouldContainsOKStatus" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpellTests_itShouldContainsOKStatus - 2020.05.03 at 12h 48m 40s.xml">
+      <configuration name="SpellTests.itShouldContainsOKStatus" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpellTests_itShouldCointainsCurseSpells - 2020.05.03 at 12h 48m 58s.xml">
+      <configuration name="SpellTests.itShouldCointainsCurseSpells" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpellTests_itShouldCointainsCurseSpells - 2020.05.03 at 12h 49m 24s.xml">
+      <configuration name="SpellTests.itShouldCointainsCurseSpells" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25901000" />
+    <option name="totallyTimeSpent" value="28512000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="90" y="53" width="1077" height="821" extended-state="0" />
+    <frame x="90" y="53" width="1298" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26086956" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21496816" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -452,8 +452,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/SpellTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="35" selection-end-line="53" selection-end-column="35" />
+        <state relative-caret-position="342">
+          <caret line="72" column="56" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="56" />
         </state>
       </provider>
     </entry>

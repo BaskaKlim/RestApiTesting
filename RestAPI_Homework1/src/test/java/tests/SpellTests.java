@@ -6,6 +6,7 @@ import org.hamcrest.collection.*;
 import org.junit.jupiter.api.*;
 
 import static io.restassured.RestAssured.*;
+import static java.util.stream.Collectors.*;
 import static org.hamcrest.MatcherAssert.*;
 import static org.hamcrest.Matchers.*;
 
@@ -51,6 +52,26 @@ public class SpellTests {
         when().get()
                 .then().log()
                 .status().statusLine(containsString("OK"));
+
+    }
+
+    //TODO 4: pomocou stream->filter skúste vytiahnuť len kúzla typu Curse a overte, že zoznam nie je prázdny
+    @Test
+    void itShouldCointainsCurseSpells() {
+        //1. vytiahnem si vsetky spells do listu  / do hashmapy naplnenej objetami
+        List<HashMap<Object, String>> spells = when().get()
+                .then().extract().response()
+                .jsonPath().getList("$");
+
+        //2. cez stream filter vytiahem z listu len tie, ktore su typu curse, a nasledne collectnut do listu
+
+        spells = spells.stream().filter(object -> object.get("type").equals("Curse"))
+                .collect(toList());
+
+        //3. overim, ci list tychto vyfiltrovanych hodnot je vacsi ako 10 napr.
+        assertThat(spells, hasSize(greaterThan(10)));
+        // 4. vypisem si velkost listu kuzel typu curse 
+        System.out.println(spells.size());
 
     }
 }
