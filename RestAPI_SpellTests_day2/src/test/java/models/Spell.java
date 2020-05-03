@@ -41,6 +41,7 @@ public class Spell {
         effect = newValue;
     }
 
+    @Deprecated isUnforgivable
     public Boolean getUnforgivable() {
         return isUnforgivable;
     }
