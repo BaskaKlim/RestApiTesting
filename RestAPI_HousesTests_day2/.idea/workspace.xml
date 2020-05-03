@@ -13,10 +13,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/CharactesTests.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/HousesTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+            <state relative-caret-position="353">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -24,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/4.3.0/rest-assured-4.3.0-sources.jar!/io/restassured/specification/PreemptiveAuthSpec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225">
-              <caret line="9" column="86" lean-forward="true" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
+            <state relative-caret-position="162">
+              <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -50,6 +50,7 @@
         <option value="$PROJECT_DIR$/src/test/java/models/Spell.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/SpellTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/CharactesTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/HousesTests.java" />
       </list>
     </option>
   </component>
@@ -74,52 +75,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPI_CharactersTests_day2" type="462c0819:PsiDirectoryNode" />
+              <item name="RestAPI_HousesTests_day2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPI_CharactersTests_day2" type="462c0819:PsiDirectoryNode" />
+              <item name="RestAPI_HousesTests_day2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPI_CharactersTests_day2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPI_CharactersTests_day2" type="462c0819:PsiDirectoryNode" />
+              <item name="RestAPI_HousesTests_day2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPI_CharactersTests_day2" type="462c0819:PsiDirectoryNode" />
+              <item name="RestAPI_HousesTests_day2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPI_CharactersTests_day2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPI_CharactersTests_day2" type="462c0819:PsiDirectoryNode" />
+              <item name="RestAPI_HousesTests_day2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -129,6 +113,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -140,7 +125,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588517242459" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588517487745" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -171,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HousesTests.itShouldReturnErrorMessageWithoutToken">
+  <component name="RunManager" selected="JUnit.HousesTests.itShouldReturnHousesWhenUserHasToken">
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -181,26 +166,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HousesTests.itShoulFilterSpellsBasedOnQueryType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="potterpitest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.HousesTests" />
-      <option name="METHOD_NAME" value="itShoulFilterSpellsBasedOnQueryType" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -285,6 +250,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HousesTests.itShouldReturnHousesWhenUserHasToken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="potterpitest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.HousesTests" />
+      <option name="METHOD_NAME" value="itShouldReturnHousesWhenUserHasToken" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -329,19 +314,19 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.tests" />
-      <item itemvalue="JUnit.HousesTests.itShoulFilterSpellsBasedOnQueryType" />
       <item itemvalue="JUnit.HousesTests.itShouldAddNewSpell" />
       <item itemvalue="JUnit.HousesTests.itShouldReturnErrorMessageWhenUserIsNotAuthenticated" />
       <item itemvalue="JUnit.HousesTests.itShouldReturnCharactersWhenUserIsAuthenticated" />
       <item itemvalue="JUnit.HousesTests.itShouldReturnErrorMessageWithoutToken" />
+      <item itemvalue="JUnit.HousesTests.itShouldReturnHousesWhenUserHasToken" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HousesTests.itShouldReturnHousesWhenUserHasToken" />
         <item itemvalue="JUnit.HousesTests.itShouldReturnErrorMessageWithoutToken" />
         <item itemvalue="JUnit.HousesTests.itShouldReturnCharactersWhenUserIsAuthenticated" />
         <item itemvalue="JUnit.HousesTests.itShouldReturnErrorMessageWhenUserIsNotAuthenticated" />
         <item itemvalue="JUnit.HousesTests.itShouldAddNewSpell" />
-        <item itemvalue="JUnit.HousesTests.itShoulFilterSpellsBasedOnQueryType" />
       </list>
     </recent_temporary>
   </component>
@@ -360,6 +345,7 @@
       <workItem from="1588258693202" duration="19548000" />
       <workItem from="1588507811292" duration="5861000" />
       <workItem from="1588515772922" duration="1212000" />
+      <workItem from="1588517041619" duration="320000" />
     </task>
     <servers />
   </component>
@@ -396,13 +382,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38715000" />
+    <option name="totallyTimeSpent" value="39035000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="90" y="24" width="1298" height="821" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22133759" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2245223" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -411,7 +396,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32921812" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32921812" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -440,23 +425,23 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/CharactesTests.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/tests/HousesTests.java</url>
           <line>24</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/CharactesTests.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/tests/HousesTests.java</url>
           <line>55</line>
-          <properties class="tests.CharactesTests" method="itShouldAddNewSpell">
+          <properties class="tests.CharactesTests">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/tests/CharactesTests.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/tests/HousesTests.java</url>
           <line>39</line>
-          <properties class="tests.CharactesTests" method="itShouldReturnCharactersWhenUserIsAuthenticated">
+          <properties class="tests.HousesTests" method="itShouldReturnCharactersWhenUserIsAuthenticated">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="3" />
@@ -489,17 +474,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/4.3.0/rest-assured-4.3.0-sources.jar!/io/restassured/specification/PreemptiveAuthSpec.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/HousesTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="9" column="86" lean-forward="true" selection-start-line="9" selection-start-column="86" selection-end-line="9" selection-end-column="86" />
+        <state relative-caret-position="353">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/CharactesTests.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/4.3.0/rest-assured-4.3.0-sources.jar!/io/restassured/specification/PreemptiveAuthSpec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
+        <state relative-caret-position="162">
+          <caret line="9" column="70" selection-start-line="9" selection-start-column="70" selection-end-line="9" selection-end-column="70" />
         </state>
       </provider>
     </entry>

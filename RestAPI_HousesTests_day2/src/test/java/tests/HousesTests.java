@@ -22,7 +22,7 @@ public class HousesTests {
     static void config() {
         RestAssured.baseURI = "http://localhost";
         RestAssured.port = 3000;
-        RestAssured.basePath = "/houses";    // endpoint
+
 
     }
 
@@ -30,11 +30,21 @@ public class HousesTests {
 
     @Test
     void itShouldReturnErrorMessageWithoutToken() {
-        when().get()
+        when().get("/houses")
                 .then().statusCode(403)
                 .and().body("message", equalTo("Sorry Wizard you dont have TOKEN"));
     }
 
-    
+    @Test
+    void itShouldReturnHousesWhenUserHasToken() {
+        //1 request  - ziskam token
+        String token = given().auth().preemptive().basic("admin", "supersecret")
+                .when().get("/login")
+                .then().extract().jsonPath().get("token");
+
+        System.out.println(token);
+
+        //2 request - pouzijem token a dotiahnem houses
+    }
 }
 
