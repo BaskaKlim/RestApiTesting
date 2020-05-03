@@ -7,6 +7,7 @@ import org.junit.jupiter.api.*;
 
 import com.github.javafaker.*;
 import exceptions.*;
+import io.restassured.http.*;
 import models.*;
 
 import static io.restassured.RestAssured.*;
@@ -65,11 +66,13 @@ public class SpellTests {
 
         //2. pomocou POST poslem toto kuzlo serveru
         // treba za given nastavit hlavicku
-        given().header("Content-Type", "application/json")
+        given().contentType(ContentType.JSON) //header("Content-Type", "application/json")
                 .body(newSpell2).log().body() //zalogujem si co posielam na server
                 .when().post().then().statusCode(201)
                 .body("message", equalTo("Spell created"))
                 .body("spell.id", not(emptyOrNullString()));
     }
+
+
 }
 
