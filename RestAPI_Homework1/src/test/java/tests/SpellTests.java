@@ -69,10 +69,37 @@ public class SpellTests {
                 .collect(toList());
 
         //3. overim, ci list tychto vyfiltrovanych hodnot je vacsi ako 10 napr.
-        assertThat(spells, hasSize(greaterThan(10)));
+        assertThat(spells, hasSize(equalTo(15)));
         // 4. vypisem si velkost listu kuzel typu curse 
         System.out.println(spells.size());
 
     }
+
+    //TODO 5: pomocou stream->filter skúste vytiahnuť idčko kúzla Avada Kedavra , pošlite v rámci testu ďaľší
+    // request a toto id použite. Potom overte, že kúzlo, ktoré sa vám vrátilo je práve Avada Kedavra.
+    @Test
+    void itShouldFindSpellIdAndSendItAsParameter() {
+        //1. vytiahnem si vsetky spells do listu  / do hashmapy naplnenej objetami
+        List<HashMap<Object, String>> spells = when().get()
+                .then().extract().response()
+                .jsonPath().getList("$");
+
+        //2. z hashmapy objektov si vyberiem objekt s danym id
+        String id = spells.stream().filter(object -> object.get("spell").equals("Avada Kedavra"))
+                .findFirst()
+                .orElseThrow(() -> new NullPointerException("Spell not found"))
+                .get("id");
+
+        //3. id pouzijem ako path paramenter
+        given().pathParam("spellId",id)
+                .when().get("/{spellId}")
+                .then()
+                .body("spell", equalTo("Avada Kedavra"))
+                .body("effect", equalTo("murders opponent"))
+                .body("type", equalTo("Curse"))
+                .body("isUnforgivable",is(true));
+
+    }
+
 }
 
