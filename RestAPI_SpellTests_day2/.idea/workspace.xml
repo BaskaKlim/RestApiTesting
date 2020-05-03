@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/SpellTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+            <state relative-caret-position="299">
+              <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -131,7 +131,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588509896173" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588510249352" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -349,14 +349,11 @@
       <workItem from="1588245648085" duration="2475000" />
       <workItem from="1588248449306" duration="5008000" />
       <workItem from="1588258693202" duration="19548000" />
-      <workItem from="1588507811292" duration="896000" />
+      <workItem from="1588507811292" duration="1169000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpellTests_itShouldContainsOKStatus - 2020.05.02 at 23h 09m 17s.xml">
-      <configuration name="SpellTests.itShouldContainsOKStatus" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SpellTests_itShouldContainsOKStatus - 2020.05.03 at 12h 48m 40s.xml">
       <configuration name="SpellTests.itShouldContainsOKStatus" configurationId="JUnit" />
     </history-entry>
@@ -384,15 +381,18 @@
     <history-entry file="SpellTests_itShouldFindSpellIdAndSendItAsParameter - 2020.05.03 at 13h 53m 47s.xml">
       <configuration name="SpellTests.itShouldFindSpellIdAndSendItAsParameter" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpellTests_itShoulFilterSpellsBasedOnQueryType - 2020.05.03 at 14h 45m 16s.xml">
+      <configuration name="SpellTests.itShoulFilterSpellsBasedOnQueryType" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32538000" />
+    <option name="totallyTimeSpent" value="32811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="90" y="24" width="1298" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21815287" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21815287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -401,7 +401,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32921812" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32921812" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -458,8 +458,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/SpellTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        <state relative-caret-position="299">
+          <caret line="33" column="46" lean-forward="true" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
         </state>
       </provider>
     </entry>

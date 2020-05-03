@@ -26,6 +26,7 @@ public class SpellTests {
     void itShoulFilterSpellsBasedOnQueryType() {
         //1. nastavim parametre cez query
         given().queryParam("type", "Curse")
+                .queryParam("isUnforgivable",true)
         //2. vytiahnem si vsetky do logu
                 .when().get()
                 .then().log().body();
