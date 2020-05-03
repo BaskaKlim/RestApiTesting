@@ -57,7 +57,7 @@ public class SpellTests {
         Faker faker = new Faker();
         //1. vytvorit objektu noveho kuzla
         HashMap<Object, Object> newSpell = new HashMap<>();
-        newSpell.put("spell", faker.harryPotter().character());
+        newSpell.put("spell", "Corona ".concat(faker.letterify("???")));
         newSpell.put("effect", faker.harryPotter().quote());
         newSpell.put("type", "Curse");
         newSpell.put("isUnforgivable", "true");
