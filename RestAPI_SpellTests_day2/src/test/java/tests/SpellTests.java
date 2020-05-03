@@ -6,6 +6,7 @@ import org.hamcrest.collection.*;
 import org.junit.jupiter.api.*;
 
 import exceptions.*;
+import models.*;
 
 import static io.restassured.RestAssured.*;
 import static java.util.stream.Collectors.*;
@@ -25,12 +26,12 @@ public class SpellTests {
     @Test
     void itShoulFilterSpellsBasedOnQueryType() {
         //1. nastavim parametre cez query a vytiahnem si list kuzel, ktory ich splna
-        List<HashMap <Object, String>> spells = given().queryParam("type", "Curse")
+        List<Spell> spells = given().queryParam("type", "Curse")
                 .when().get()
-                .then().extract().jsonPath().getList("$");
+                .then().extract().jsonPath().getList("$",Spell.class);
 
         // 2. overit ze kazde kuzlo je typu Curse
-        spells.forEach(spell -> assertThat(spell.get("type"), equalTo("Curse")));
+        spells.forEach(spell -> assertThat(spell.getType(), equalTo("Curse")));
 
         // 3. overit ze pocet je vacsi ako 0
         assertThat(spells, hasSize(greaterThan(0)));
