@@ -37,5 +37,21 @@ public class SpellTests {
         assertThat(spells, hasSize(greaterThan(0)));
     }
 
+
+    // TODO: pridat nove kuzlo
+    @Test
+    void itShouldAddNewSpell(){
+        //1. vytvorit objektu noveho kuzla
+        HashMap<Object,Object> newSpell = new HashMap<>();
+        newSpell.put("spell","Corona");
+        newSpell.put("effect","sneezing forever");
+        newSpell.put("type","Curse");
+        newSpell.put("isUnforgivable","true");
+
+        //2. pomocou POST poslem toto kuzlo serveru
+          // treba za given nastavit hlavicku
+        given().header("Content-Type","application/json")
+                .body(newSpell).when().post().then().statusCode(201);
+    }
 }
 
