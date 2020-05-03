@@ -20,6 +20,15 @@ public class SpellTests {
         port = 3000;
         basePath = "/spells";
 
+    }
+
+    @Test
+    void itShoulFilterSpellsBasedOnQueryType() {
+        //1. nastavim parametre cez query
+        given().queryParam("type", "Curse")
+        //2. vytiahnem si vsetky do logu
+                .when().get()
+                .then().log().body();
 
     }
 

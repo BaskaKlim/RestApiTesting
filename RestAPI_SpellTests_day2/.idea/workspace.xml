@@ -12,16 +12,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/SpellTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="89" column="68" lean-forward="true" selection-start-line="89" selection-start-column="68" selection-end-line="89" selection-end-column="68" />
+            <state relative-caret-position="504">
+              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/exceptions/SpellNotFundException.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -55,8 +55,8 @@
         <option value="$PROJECT_DIR$/src/main/java/exceptions/SpellNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/test/java/modals/Spell.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/tests/SpellTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/exceptions/SpellNotFundException.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/SpellTests.java" />
       </list>
     </option>
   </component>
@@ -81,42 +81,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPI_Homework1" type="462c0819:PsiDirectoryNode" />
+              <item name="RestAPI_SpellTests_day2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPI_Homework1" type="462c0819:PsiDirectoryNode" />
+              <item name="RestAPI_SpellTests_day2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPI_Homework1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPI_Homework1" type="462c0819:PsiDirectoryNode" />
+              <item name="RestAPI_SpellTests_day2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPI_Homework1" type="462c0819:PsiDirectoryNode" />
+              <item name="RestAPI_SpellTests_day2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="potterpitest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RestAPI_Homework1" type="462c0819:PsiDirectoryNode" />
+              <item name="RestAPI_SpellTests_day2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -126,6 +119,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -137,7 +131,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588507223309" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1588509896173" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -168,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpellTests.itShouldFindSpellIdAndSendItAsParameter">
+  <component name="RunManager" selected="JUnit.SpellTests.itShoulFilterSpellsBasedOnQueryType">
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -193,6 +187,26 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.SpellTests" />
       <option name="METHOD_NAME" value="itShoudlContainsAvadaKedavraSpellinListOfSpells" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpellTests.itShoulFilterSpellsBasedOnQueryType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="potterpitest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SpellTests" />
+      <option name="METHOD_NAME" value="itShoulFilterSpellsBasedOnQueryType" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -262,26 +276,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpellTests.itShouldReturnSizeOfSpells" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="potterpitest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.SpellTests" />
-      <option name="METHOD_NAME" value="itShouldReturnSizeOfSpells" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -327,18 +321,18 @@
     <list>
       <item itemvalue="JUnit.tests" />
       <item itemvalue="JUnit.SpellTests.itShoudlContainsAvadaKedavraSpellinListOfSpells" />
-      <item itemvalue="JUnit.SpellTests.itShouldReturnSizeOfSpells" />
       <item itemvalue="JUnit.SpellTests.itShouldContainsOKStatus" />
       <item itemvalue="JUnit.SpellTests.itShouldCointainsCurseSpells" />
       <item itemvalue="JUnit.SpellTests.itShouldFindSpellIdAndSendItAsParameter" />
+      <item itemvalue="JUnit.SpellTests.itShoulFilterSpellsBasedOnQueryType" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpellTests.itShoulFilterSpellsBasedOnQueryType" />
         <item itemvalue="JUnit.SpellTests.itShouldFindSpellIdAndSendItAsParameter" />
         <item itemvalue="JUnit.SpellTests.itShouldCointainsCurseSpells" />
         <item itemvalue="JUnit.SpellTests.itShouldContainsOKStatus" />
         <item itemvalue="JUnit.SpellTests.itShoudlContainsAvadaKedavraSpellinListOfSpells" />
-        <item itemvalue="JUnit.SpellTests.itShouldReturnSizeOfSpells" />
       </list>
     </recent_temporary>
   </component>
@@ -355,6 +349,7 @@
       <workItem from="1588245648085" duration="2475000" />
       <workItem from="1588248449306" duration="5008000" />
       <workItem from="1588258693202" duration="19548000" />
+      <workItem from="1588507811292" duration="896000" />
     </task>
     <servers />
   </component>
@@ -391,13 +386,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31642000" />
+    <option name="totallyTimeSpent" value="32538000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="90" y="53" width="1298" height="821" extended-state="0" />
+    <frame x="90" y="24" width="1298" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21496816" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21815287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -436,7 +431,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/SpellTests.java</url>
-          <line>60</line>
+          <line>21</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -444,20 +439,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/exceptions/SpellNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/modals/Spell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/exceptions/SpellNotFoundException.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/modals/Spell.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ff.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -465,24 +449,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ff.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/exceptions/SpellNotFundException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="14" />
+        <state relative-caret-position="126">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/SpellTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="89" column="68" lean-forward="true" selection-start-line="89" selection-start-column="68" selection-end-line="89" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/exceptions/SpellNotFundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="504">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
         </state>
       </provider>
     </entry>
