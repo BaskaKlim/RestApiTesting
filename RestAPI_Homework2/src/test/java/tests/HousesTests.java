@@ -82,7 +82,9 @@ public class HousesTests {
                     .preemptive()
                     .basic("admin", "supersecret")
                     .when().get("/characters/{id}")
-                    .then().statusCode(200);
+                    .then().statusCode(200)
+                    .body("name",not(emptyOrNullString()))
+                    .body("house",equalTo("Gryffindor"));
 
         });
 
