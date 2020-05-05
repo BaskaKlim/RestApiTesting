@@ -27,7 +27,8 @@ public class SpellTests {
 
     @BeforeEach
     void resetSpells() {
-        // zavolam konkretny endpoint tak si zresetujem kuzla: https://localhost:3009/spells/actions/reset
+        //TODO: vytvorte si metódu s anotáciou Before each a toto volanie resetu tam pridajte
+        //zavolam konkretny endpoint tak si zresetujem kuzla: https://localhost:3009/spells/actions/reset
         when().get("/actions/reset")
                 .then().statusCode(200);
 
