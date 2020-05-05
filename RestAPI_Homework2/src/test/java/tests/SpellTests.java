@@ -46,6 +46,41 @@ public class SpellTests {
 
     }
 
+    @Test
+    void itShouldUpdateSpell() {
+        //TODO:  Spellelogy - PUT napíšte test na úpravu existujúceho kúzla
+        //1.vytvorim si kuzlo
+        Spell spell = new Spell(
+                "Halabala",
+                "Curse",
+                "Sneezing forever",
+                true
+        );
+        //2. pomocou POST poslem toto kuzlo serveru
+        String id =
+                given()
+                        .contentType(ContentType.JSON)
+                        .body(spell)
+                        .when().post()
+                        .then().log().body()
+                        .statusCode(201)
+                        .body("message", equalTo("Spell created")).extract()
+                        .jsonPath()
+                        .get("spell.id");
 
+        //3. vytvorim si updatnute nove kuzlo ktore chcem vlozit namiesto povodneho
+        Spell newSpell = new Spell("Nunanana",
+                "Hex",
+                "summons a broom",
+                false);
+        //4. predam serveru nove updatnute kuzlo
+        given()
+                .contentType(ContentType.JSON)
+                .pathParam("idOfSpell", id)
+                .body(newSpell)
+                .when().put("/{idOfSpell}")
+                .then().statusCode(201)
+                .and().body("message", equalTo("Spell updated"));
+
+    }
 }
-

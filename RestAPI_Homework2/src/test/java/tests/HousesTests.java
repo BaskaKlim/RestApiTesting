@@ -13,16 +13,17 @@ import static org.hamcrest.Matchers.*;
 public class HousesTests {
 
     // vytiahnem si token
-   private static String token;
+    private static String token;
 
     @BeforeAll
     static void config() {
         RestAssured.baseURI = "http://localhost";
         RestAssured.port = 3000;
+
+        //TODO: HousesTest - TOKEN si vytiahnite len raz pred všetkými testami. uložte ho do static premennej v rámci triedy a prepoužite v každom teste
         token = given().auth().preemptive().basic("admin", "supersecret")
                 .when().get("/login")
                 .then().extract().jsonPath().get("token");
-
 
     }
 
@@ -83,8 +84,8 @@ public class HousesTests {
                     .basic("admin", "supersecret")
                     .when().get("/characters/{id}")
                     .then().statusCode(200)
-                    .body("name",not(emptyOrNullString()))
-                    .body("house",equalTo("Gryffindor"));
+                    .body("name", not(emptyOrNullString()))
+                    .body("house", equalTo("Gryffindor"));
 
         });
 
