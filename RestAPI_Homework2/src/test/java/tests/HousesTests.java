@@ -3,6 +3,7 @@ package tests;
 import java.util.*;
 import org.junit.jupiter.api.*;
 
+import io.restassured.*;
 import models.*;
 
 import static io.restassured.RestAssured.*;
@@ -12,14 +13,16 @@ import static org.hamcrest.Matchers.*;
 public class HousesTests {
 
     // vytiahnem si token
-    String token = given().auth().preemptive().basic("admin", "supersecret")
-            .when().get("/login")
-            .then().extract().jsonPath().get("token");
+   private static String token;
 
     @BeforeAll
     static void config() {
-        baseURI = "http://localhost";
-        port = 3000;
+        RestAssured.baseURI = "http://localhost";
+        RestAssured.port = 3000;
+        token = given().auth().preemptive().basic("admin", "supersecret")
+                .when().get("/login")
+                .then().extract().jsonPath().get("token");
+
 
     }
 
@@ -42,7 +45,7 @@ public class HousesTests {
         List<String> allHousesByName = given()
                 .header("Authorization", "Bearer ".concat(token))
                 .when().get("/houses")
-                .then().extract().jsonPath().getList("name");
+                .then().extract().jsonPath().getList("name", String.class);
 
         System.out.println(allHousesByName);
 
@@ -62,7 +65,26 @@ public class HousesTests {
                 .then().statusCode(200).statusLine(containsString("OK"))
                 .body("name", equalTo("Gryffindor"));
 
-
     }
 
+    @Test
+    void itShouldReturnNameForEachCharacterForGryffindor() {
+        //vytiahnem si  list membrov / su uvedene ako ids
+        List<String> idsOfMember = given().header("Authorization", "Bearer ".concat(token))
+                .when().get("houses/5a05e2b252f721a3cf2ea33f")  //gryffindor id
+                .then().extract().response().jsonPath().getList("members", String.class);
+
+        //pre kazdy zaznam urobim konkretny kod
+        idsOfMember.forEach(memberId -> {
+            //nalogujem sa na kazdu url pre kazdeho membra a chechnem kod 200
+            given().pathParam("id", memberId)
+                    .auth()
+                    .preemptive()
+                    .basic("admin", "supersecret")
+                    .when().get("/characters/{id}")
+                    .then().statusCode(200);
+
+        });
+
+    }
 }
